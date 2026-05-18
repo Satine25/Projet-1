@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>TpWeb</title>
+    <!--Insérer le flavicon-->
+    <link rel="shortcut icon" href="Icone.png">
+    <!--link CSS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="plus_dinformations.js"></script>
+</head> 
+<body>
+    <a href="cours.html"><img src="LogoGI.jpg" width="250" height="180" alt="Logo"></a>
+    <div class="container_informations">
+        <!-- Titre principal -->
+        <h2>Plus d'informations</h2>
+        <!-- Site internet en direct (au lieu de la capture) -->
+        <iframe src="https://www.univ-ubs.fr/fr/index.html"  id="Iframe_ENSIBS"height="300px" width="100%"></iframe>
+        <!-- Lien vers le site -->
+        <p>Découvrir plus d'informations sur notre site : <a href="https://www.ensibs.fr" class="info-site-link" style="display:inline;">ensibs.fr</a></p>
+        <!-- Section Nous contacter -->
+        <h2>Nous contacter</h2>
+        
+        <p id="MyfooterJS2">Retrouvez-nous sur notre site de Lorient!</p>
+         <!-- Bouton -->
+        <button id="button-retrouvez" onclick="AffichageTexte()">Retrouvez-nous!</button>
+
+        <!-- Section Dernière consultation -->
+        <h2>Dernière consultation</h2>
+        <button id="button-retrouvez" onclick="date()">Cliquer ici.</button>
+        <p id="section"></p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/*MISE EN FORME DU SITE GÉNÉRAL-INTRODUCTION COURS*/
+
+/*dislay flex = rend les objets flexible, espace et largeur en centrant les Ã©lÃ©ments*/
+.contaignerleftright{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto; /*centre le contenu horizontalement*/
+} 
+.left, .right {
+    width: 60%;
+    padding: 5px;
+}
+
+.button-style{
+    background-color: chartreuse; /*couleur de fond*/
+    border: none; /*pas de bordure*/
+    color: beige; /*couleur du texte*/
+    padding: 15px; /*espacement interne*/
+    text-align: center; /*alignement du texte*/
+    text-decoration: none ; /* pas de soulignement*/
+    font-size: 18px; /*taille de police*/
+    margin: 4px; /*espacement externe*/
+    cursor: pointer ; /*forme de curseur*/
+    font-weight:  bold; /* afficher le style gras*/
+    display: inline-block; /*centrer*/
+    width: 205px;
+
+}
+
+body, html { /*style de base pour html pour s'assurer que l'interface utilisateur soit correcte, on ne met pas de point cr mot pas dÃ©faut du html*/
+    height: 100%;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{   /*c'est une de nos fonctions donc on met un point*/
+    display: flex; /*rend les Ã©lÃ©ments flexibles*/
+        flex:1; /*ajoute une section Ã  celle existante*/
+        width: 70%;
+        margin: auto;
+}
+
+.content{
+    width: 80%;
+    padding: 20px ;
+}
+
+.sectionsleft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sectionleft{
+    background-color: blueviolet;
+    width: 230px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*PAGE CÉRÉMONIE*/
+
+.containerceremony{ 
+    width: 70%; margin: auto; /* Centre le contenu horizontalement*/ 
+} 
+
+.button-ceremony{ background-color: green;/* Couleur de fond du boutton*/ 
+    color: white;/*Couleur du texte*/ 
+    border: 5px solid black;/*Bordure dorÃ©e*/ 
+    padding: 15px 40px;/* Espacement intÃ©rieur*/ 
+    text-align: center;/*Alignement du texte*/ 
+    font-size: 18px;/*Taille de la police*/ 
+    font-weight: bold;/* Poids de la police*/ 
+    margin: 10px 60px;/*Marges*/ 
+    border-radius: 10px;/* 10: coins arrondis*/ 
+    box-shadow: 0 10px 15px green;/* 0:effet, Ombre*/ 
+    font-family: 'Times New Roman';/* Typographie*/
+}
+
+/*PAGE ADMISSION*/
+
+.containeradmission{ 
+    width: 80%;
+    margin: 2px auto; /*Centre le contenu*/ 
+    padding: 30px; 
+} 
+table, th, td { 
+    border: 1px solid black; 
+    border-collapse: collapse; /*bordures adjacentes des cellules*/ 
+} 
+
+th{ text-align: left; } /*Table2*/ 
+
+
+caption{ caption-side: top;/*LÃ©gende au-dessus du tableau*/ 
+    font-size: 18px; 
+    margin-bottom: 10px;/*Espace entre la lÃ©gende et le tableau*/ 
+    font-weight: bold; text-align: center;/*Centrer la lÃ©gende*/
+    color: green; /*Couleur verte*/ 
+    }
+
+#myfooter{
+    background-color: blue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+#myfooter{ background-color: rgb(6, 75, 173);/* Couleur de fond du boutton*/  
+    text-align: center;/*Alignement du texte*/ 
+    font-size: 36px;/*Taille de la police*/ 
+    font-weight: bold;/* Poids de la police*/ 
+    margin-top: 20px;/*Marges*/ 
+    text-transform: uppercase;/*Transforme toute les lettres en majuscules*/
+    letter-spacing: 2px; 
+}
+
+#myfooter:hover{ /*permet de passer la souris dessus = changement de couleur*/
+    color: green;
+}
+
+#button-myfooter{
+    display: block; /*afficher en tant que bloc pour avoir toute la largeur*/
+    background-color: lightblue;/* Couleur de fond du boutton*/ 
+    color: white;/*Couleur du texte*/ 
+    border: 5px solid black;/*Bordure dorÃ©e*/ 
+    padding: 15px 40px;/* Espacement intÃ©rieur*/ 
+    text-align: center;/*Alignement du texte*/ 
+    font-size: 22px;/*Taille de la police*/ 
+    font-weight: bold;/* Poids de la police*/ 
+    margin: 50px auto;/*Marges*/ 
+    cursor: pointer; 
+    font-family: 'Times New Roman';/* Typographie*/
+}
+
+/*PAGE PLUS D'INFORMATIONS*/
+
+.container_informations{ 
+    width: 80%;
+    margin: 2px auto; /*Centre le contenu*/ 
+    padding: 30px; 
+} 
+
+#Iframe_ENSIBS{ 
+    border: 2px solid #2c3e50; 
+    border-radius: 5px; /*Coins arrondis*/ 
+} 
+#MyfooterJS2{ 
+    color: #1980b9; /* Couleur du texte des liens*/ 
+    text-decoration: none; /* Supprime la dÃ©coration par dÃ©faut (soulignement)*/ 
+    font-weight: bold; /*Texte en gras*/ 
+} 
+#MyfooterJS2:hover{ 
+    text-decoration: underline; /*Soulignement du texte au survol*/ 
+    color: green; 
+}
+
+/*PAGE ENSIBS*/
+
+        html,body{
+            height: 100%;
+            margin: 0; /*supprimer les marges*/
+            padding: 0;/*Supprimer les espacements*/
+        }
+        body{
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+        header, footer{
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header{
+            font-size: 32px;
+        }
+        footer{
+            font-size: 16px;
+        }
+        .container{
+            flex: 1;
+            display: grid; 
+            width: 100%; 
+            margin: 0;       
+        }
+        nav, article{
+            padding: 20px;
+        }
+        nav{
+            background-color: whitesmoke;
+            flex: 1;
+            font-size: 15px;
+        }
+        article{
+            background-color: white;
+            font-size: 18px;
+        }
+        nav ul{
+            list-style-type: none;/*Supprimer les puces ou numéros par défaut(ordonnée ou non)*/
+            padding: 0;
+        }
+        nav ul li{
+            flex: 1;
+        }
+        nav ul li a {
+            color: black;
+            font-size: 18px;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;/*la largeur et la hauteur incluent les bordures et les espacements
+            internes*/
+        }
+        nav ul li a:hover{
+            background-color: #004d00;
+            color: white;
+        }
+        .btn {
+            display: inline-block; /*élément en ligne*/
+            padding: 15px 25px;
+            margin: 5px 0;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            background-color: #004d00;
+            border-radius: 5px;
+            text-decoration: none;/*enlever le soulignement du texte*/
+        }
+        .btn:hover{
+            background-color: #003300;
+        }
+
+        @media (min-width: 600px){/*règle de média apploquée lorsque la largeur de l"écran est d'au moins 600 pixels*/
+            .container{
+                grid-template-columns: 20% 80%;/*deux colonnes*/
+                grid-template-rows: none;/*aucune ligne*/
+            }
+            nav{
+                order: 1;/*Placé en premier dans l'ordre de la grille*/
+            }
+            article{
+            order: 2;    
+            }
+        }
+
+/*PAGE MÉDIA */
+
+ .containerMedia {
+      width: 70%;
+      margin: auto; 
+      align-items: center;   
+      text-align: center;
+  }
+  .video-container {
+    display: flex;/*diviser la section */
+    align-items: center;
+}
+.video {
+    flex: 1; /*ajouter une sous-section */
+    margin: 10px;
+}
+#button-média {
+  display: inline-block; /*centrer*/
+  margin: 20px auto;
+  border: black;
+  cursor: pointer;                                                                          
+  background-color: lightblue; 
+  color: black; 
+  border: 5px solid black;
+  border-radius: 6px;
+  padding: 15px 40px; 
+  text-align: center; 
+  font-size: 22px; 
+  font-weight: bold; 
+  font-family: 'Times New Roman'; 
+}
+
